@@ -17,7 +17,6 @@ Example Playbook
 Example: run locally 
 Create a {name}.yml playbook:
 
----
 - name: Deploy Terraform
   hosts: 127.0.0.1
   connection: local
