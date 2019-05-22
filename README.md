@@ -16,7 +16,8 @@ Example Playbook
 
 Example: run locally 
 Create a {name}.yml playbook:
-
+```
+---
 - name: Deploy Terraform
   hosts: 127.0.0.1
   connection: local
@@ -24,7 +25,7 @@ Create a {name}.yml playbook:
   become_method: sudo
   roles:
     - { role: bloodychaton.terraform }
-
+```
 
 Then use command: $ ansible-playbook -K {name}.yml
 
